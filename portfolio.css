@@ -67,18 +67,7 @@ h2{
     transform: scale(1.1);
 
 }
-
-
-#menu-icon {
-    display: block;
-    width: 100px;
-    height: 30px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  
 .navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
@@ -87,21 +76,25 @@ h2{
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
+.menu-icon{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
 
-#menu-icon{
-    font-size: 3.6rem;
-    color: var(--main-color);
-    display: none;
-}
 
 @media (max-width: 995px){
-    #menu-icon{
+    .menu-icon{
         display:block;
+        cursor: pointer;
     }
     .navbar{
         position: absolute;
@@ -120,7 +113,7 @@ h2{
         display: block;
     }
     .navbar a{
-        display: block;
+        display: none;
         font-size: 2rem;
         margin: 3rem 0;
     }
@@ -292,11 +285,12 @@ span{
 .services-container{
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
+    
     
     
 
@@ -305,7 +299,7 @@ span{
     font-size: 10rem;            
     color: #fff;               
     text-align: center;
-    margin-bottom: 2rem;                
+                
 }
 .service-box{
     font-size: 2rem;
@@ -474,8 +468,8 @@ span{
 }
 
 .education .container::after {
-    content: '\f501'; /* Assuming this is a FontAwesome icon */
-    font-family: 'FontAwesome'; /* Ensure FontAwesome is imported */
+    content: '\f501'; 
+    font-family: 'FontAwesome'; 
     position: absolute;
     width: 25px;
     height: 25px;
@@ -484,10 +478,10 @@ span{
     border: 4px solid var(--main-color);
     top: 15px;
     border-radius: 50%;
-    font-size: 1.89rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: 600;
-    color: #7b4bb7;
+    color: black;
     z-index: 100;
 }
 
@@ -530,19 +524,48 @@ span{
 }
 
 .education .content .tag h2 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 .education .content .decs {
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.5;
 }
 
 
+.contact h2{
+    margin-bottom: 3rem;
+    color: #fff;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    text-align: center;
 
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 0.8rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
 
-
+}
+.contact form .btn{
+    margin-top: 2rem;
+}
 
