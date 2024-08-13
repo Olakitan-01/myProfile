@@ -91,7 +91,7 @@ h2{
 }
 
 
-@media (max-width: 995px){
+/* @media (max-width: 995px){
     .menu-icon{
         display:block;
         cursor: pointer;
@@ -123,7 +123,7 @@ h2{
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid var(--main-color);
     }
-}
+} */
 section{
     min-height: 100vh;
     padding: 5rem 9% 5rem;
@@ -254,7 +254,7 @@ span{
 }
 
 
-@media (max-width:1080px){
+/* @media (max-width:1080px){
     .home{
         gap: 4rem;
     }
@@ -275,7 +275,7 @@ span{
         margin-top: 4rem;
     }
 }
-
+ */
 
 
 
